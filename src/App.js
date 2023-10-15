@@ -2,6 +2,7 @@
 import { styled } from "@mui/system";
 import React, { useEffect, useRef, useState } from "react";
 import ContentListingPage from "./components/ContentListingPage";
+import { BackButton } from "./design-system/BackButton";
 import { SearchField } from "./design-system/SearchField";
 
 const MyComponent = styled("div")({
@@ -27,7 +28,7 @@ const TitleContainer = styled("div")({
   position: "sticky",
   top: 0,
   backgroundColor: "#171717",
-  padding: "16px",
+  padding: "16px 0px 16px 16px",
   boxShadow: "0 4px 4px 0 #171717",
 });
 
@@ -119,11 +120,7 @@ function App() {
         <MyComponent id="content">
           <TitleContainer>
             <TitleDiv>
-              <img
-                src={` https://test.create.diagnal.com/images/Back.png`}
-                alt={"search"}
-                style={{ height: "20px", width: "20px", marginRight: "16px" }}
-              />
+              <BackButton onClick={() => console.log("Back Button Clicked")} />
               <SearchField onSearch={handleSearch} placeholder={"Search..."} />
             </TitleDiv>
             {contentData && <Title>{contentData.page.title}</Title>}

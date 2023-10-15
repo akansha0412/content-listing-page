@@ -6,7 +6,7 @@ import ContentItem from "./ContentItem";
 
 const Container = styled("div")({
   overflowY: "auto",
-  padding: "16px",
+  padding: "16px 0px 16px 16px",
 });
 
 const ContentListingPage = ({ contentData }) => {
