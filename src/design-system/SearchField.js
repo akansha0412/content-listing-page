@@ -10,6 +10,8 @@ const CustomeTextField = styled(TextField)({
   border: `solid 1px #ffffff`,
   borderRadius: "4px",
   color: "#ffffff",
+  whiteSpace: "nowrap",
+  overflow: "hidden",
 });
 
 const CloseIcon = styled(Close)({
@@ -48,7 +50,13 @@ export function SearchField({ onSearch, placeholder }) {
   }
 
   function getInputStyles() {
-    return { padding: "6px 14px 6px 0px", color: "#ffffff" };
+    return {
+      padding: "6px 14px 6px 0px",
+      color: "#ffffff",
+      overflow: "hidden",
+      whiteSpace: "nowrap",
+      textOverflow: "ellipsis",
+    };
   }
 
   return (

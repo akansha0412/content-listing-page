@@ -33,7 +33,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 - Used design system where we can put common design components like searchField, Image and many more which needs to be used in multiple components
 - Currently used fetch to call API in useEffect. We can also use react useQuery function from react-query library and pass data as props.
-- Did client side search functionality
+- Did client side search functionality, also added a debounce it will search after some time.
 - Hide the scroll bars
 - Created a common component for back button and passed onclick also as props where we can add a functionality where we can do what we want to do on back.
 - Showing list in grid of 3.
